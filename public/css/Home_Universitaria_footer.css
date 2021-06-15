@@ -1,0 +1,60 @@
+/*Footer*/
+footer{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+}
+#TitoliDiCoda{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Contatti{
+    font-size: 1rem;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#Contatti a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+#Contatti a:hover{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/*Footer*/
+@media(max-width: 1200px){
+    footer{
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #TitoliDiCoda{
+        height: 7vh;
+    }
+    #Contatti{
+        font-size: 0.8rem;
+        height: 3vh;
+    }
+
+    #Contatti a{
+        margin-bottom: 1vh;
+    }
+}
+@media(max-width: 350px){
+    footer{
+        font-size: 0.8rem;
+    }
+    .Contatti{
+        font-size: 0.4rem;
+    }
+}

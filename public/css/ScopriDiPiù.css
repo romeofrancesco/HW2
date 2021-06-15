@@ -1,0 +1,79 @@
+/*Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+#Descrizione{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3vh;
+}
+#Descrizione strong{
+    font-size: 2rem;
+}
+#Player{
+    height: 50vh;
+    width: 60vw;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+}
+
+
+/*Versione per tablet/iPad */
+/*Section*/
+@media(max-width: 1200px){
+    #Descrizione strong{
+        font-size: 1.5rem;
+    }
+    #Player{
+        height: 30vh;
+        width: 80vw;
+    }
+}
+/*Footer*/
+@media(max-width: 1200px){
+    footer{
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #TitoliDiCoda{
+        height: 7vh;
+    }
+    #Contatti{
+        font-size: 0.8rem;
+        height: 3vh;
+    }
+
+    #Contatti a{
+        margin-bottom: 1vh;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    #Descrizione strong{
+        font-size: 1.3rem;
+    }
+    #Descrizione p{
+        font-size: 0.7rem;
+    }
+    #Player{
+        width: 90vw;
+    }
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    #Descrizione strong{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,104 @@
+
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-top: 5vh;
+    font-size: 2rem;
+}
+#Contenitore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#News , #Music{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+#News{
+    margin-top: 3vh;
+}
+.Notizia , .items{
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    justify-content: flex-end;
+}
+.title{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.title:hover{
+    cursor: pointer;
+}
+.items img{
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+}
+#Ricerca_playlist{
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*Versione per tablet/iPad */
+
+/*Section*/
+@media(max-width: 1200px){
+    #News , #Music{
+        width: 90vw;
+    }
+    .Notizia , .items{
+        width: 20vw;
+    }
+    .title , .items strong{
+        font-size: 0.8rem;
+    }
+    #Music{
+        margin-top: 2vh;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    .title , .items strong{
+        font-size: 0.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    #News{
+        margin-top: 2vh;
+    }
+    #Ricerca_playlist{
+        font-size: 1.3rem;
+    }
+   
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+
+    #Ricerca_playlist{
+        font-size: 1.1rem;
+    }
+    #Mood{
+        margin-top: 1.5vh;
+    }
+}

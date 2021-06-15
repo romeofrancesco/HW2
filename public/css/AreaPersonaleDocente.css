@@ -1,0 +1,154 @@
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#ALL{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Contenitore{
+    height: 50vh;
+    width: 30vw;
+    background-color:rgba(146, 160, 166 , 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 5vh;
+}
+.Contenitore1{
+    height: 50vh;
+    width: 30vw;
+    background-color:rgba(146, 160, 166 , 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.Contenitore h1 , .Contenitore1 h1{
+    text-align: center;
+}
+.item , .itemMaterie{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.item strong , .itemMaterie strong{
+    margin-top: 0vh;
+}
+.item input{
+    border-radius: 5px;
+}
+.Invio{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+}
+.Invio input{
+    width: 10vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+}
+.Invio_button{
+    width: 10vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+}
+/*Footer*/
+
+
+
+/*Versione per tablet/iPad */
+
+/*Section*/
+@media(max-width: 1200px){
+    #ALL{
+        width: 80vw;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Contenitore{
+        height: 45vh;
+        width: 80vw;
+    }
+    .Contenitore1{
+        height: 45vh;
+        width: 80vw;
+    }
+    .item , .itemMaterie{
+        width: 55vw;
+
+    }
+    .Invio{
+        width: 55vw;
+    }
+    .Invio input{
+        width: 20vw;
+    }
+}
+/*Footer*/
+@media(max-width: 1200px){
+
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    .Contenitore{
+        overflow: auto;
+        height: 60vh;
+    }
+    .Contenitore1{
+        height: 60vh;
+    }
+    .item{
+        width: 70vw;
+    }
+    .itemMaterie{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .Invio{
+        width: 70vw;
+    }
+    .Invio input{
+        width: 35vw;
+    }
+    .item input{
+        width: 30vw;
+    }
+    .Invio_button{
+        width: 20vw;
+    }
+ 
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    .item strong , .itemMaterie strong{
+        font-size: 1rem;
+    }
+    .item p ,.itemMaterie p{
+        font-size: 0.7rem;
+    }
+    .Invio input{
+        width: 45vw;
+    }
+}

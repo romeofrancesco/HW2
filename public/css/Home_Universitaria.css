@@ -1,0 +1,240 @@
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    display: flex;
+    font-size: 1rem;
+    color: black;
+    background: linear-gradient(rgba(234 , 235 , 230 , 0.2) , rgba(234 , 235 , 230 , 1));
+}
+#Notizie{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+#Titolo{
+    width: 70vw;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+.Contenitore{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vh;
+}
+.Items{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+.Items strong{
+    font-size: 1.2rem;
+}
+.Items p, .Items strong{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+.Items p{
+    line-height: 3vh;
+}
+.Items img{
+    width: 40vw;
+    margin-left: 2vw;
+}
+.Data{
+    width: 15vw;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    color: gray;
+}
+.Data em{
+    margin-right: 2vw;
+}
+#Meteo{
+    height: 8vh;
+    width: 14vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    right: 1vw;
+    top: 0.5vh;
+}
+#Meteo img{
+    height: 8vh;
+}
+.info_meteo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.info_meteo em{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+#Eventi{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(0 , 0 , 0 , 0.1) , rgba(0 , 0 , 0 , 0.2));
+    position: relative;
+}
+.Evento{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#TitoloEventi{
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.Evento a{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;   
+}
+.Evento p{
+    margin-top: 1vh;
+    line-height: 3vh;
+}
+.Evento a, .Evento p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/*Section*/
+@media(max-width: 1200px){
+    #Notizie{
+        width: 60vw;
+    }
+    #Titolo{
+        width: 60vw;
+        font-size: 1.2rem;
+        margin-top: 5vh;
+    }
+    .Contenitore{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    .Items{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+    }
+    .Items p{
+        font-size: 0.8rem;
+    }
+    .Items strong{
+        font-size: 1rem;
+    }
+    .Items strong , .Items p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    }
+    .Items img{
+    width: 40vw;
+    }
+    .Data{
+        width: 60vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Data em{
+        margin-right: 1vw;
+    }
+    #Meteo{
+        height: 3vh;
+        width: 20vw;
+    }
+    #Meteo img{
+        height: 3vh;
+    }
+    .info_meteo{
+        height: 3vh;
+    }
+    .info_meteo em{
+        margin-left: 0.3vw;
+        margin-right: 0.3vw;
+    }
+    #Eventi{
+        width: 40vw;
+    }
+    #TitoloEventi{
+        margin-top: 5vh;
+        font-size: 1.2rem;
+    }
+    .Evento{
+        margin-bottom: 3vh;
+    }
+    .Evento p{
+        font-size: 0.8rem;
+    }
+    .Evento a{
+        font-size: 1rem;
+    }
+}
+
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #Titolo{
+        width: 100vw;
+    }
+    #Notizie{
+        width: 100vw;
+    }
+    .Contenitore{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    section #Meteo{
+        top: 1vh;
+        width: 25vw;
+    }
+    .info_meteo{
+        font-size: 0.7rem;
+    }
+    .Items{
+        width: 100vw;
+    }
+    .Items img{
+        width: 60vw;
+    }
+    .Data{
+        width: 100vw;
+    }
+    section #Eventi{
+        position: static;
+        width: 100vw;
+        background: linear-gradient(rgba(0 , 0 , 0 , 0.1) , rgba(0 , 0 , 0 , 0.2));
+    }  
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    .info_meteo {
+        font-size: 0.5rem;
+    }
+}

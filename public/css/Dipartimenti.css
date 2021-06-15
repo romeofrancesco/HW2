@@ -1,0 +1,168 @@
+.Impossible:hover{
+    cursor: not-allowed;
+}
+.Pointer:hover{
+    cursor: pointer;
+}
+/*Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    color: black;
+    position: relative;  
+}
+#Titolo{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+#Barra-ricerca{
+    height: 3vh;
+    width: 10vw;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 10vh;
+    right: 3vw;
+}
+#Contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Items{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+.Items strong{
+    font-size: 1.5rem;
+}
+.Items img , .Scopri{
+    width: 40vw;
+}
+.Items p{
+    text-align: center;
+}
+.Intestazione{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Intestazione .Preferito{
+    height: 4vh;
+    width: 4vh;
+}
+.Scopri{
+    color: black;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size:1rem;
+}
+#SalvatiPerDopo{
+    margin-top: 3vh;
+    margin-left: 3vw;
+    font-size: 1.5rem;
+}
+#Box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-size:1rem;
+}
+.ElementoSalvato{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 3vw;
+}
+.ElementoSalvato img{
+    width: 20vw;
+}
+.ElementoSalvato button{
+    margin-top: 1vh;
+    height: 3vh;
+    border: none;
+}
+/*Versione per tablet/iPad */
+
+/*Section*/
+@media(max-width: 1200px){
+#Barra-ricerca{
+    height: 2vh;
+    width: 15vw;
+    margin-top: 1vh;
+    top: 10vh;
+    }  
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Section*/
+    section{
+        font-size: 0.8rem; 
+    }
+    #Titolo{
+        font-size: 1.8rem;
+        margin-top: 3vh;
+    }
+    .Intestazione{
+        width: 80vw;
+    }
+    #Barra-ricerca{
+        height: 1.5vh;
+        width: 20vw;
+        margin-top: 2.5vh;
+        top: 5vh;
+    }
+    #Contenitore{
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Items{
+        margin-top: 3vh;
+        width: 80vw;
+    }
+    .Items strong{
+        font-size: 1.2rem;
+    }
+    .Items img , .Scopri{
+        width: 80vw;
+    }
+    #SalvatiPerDopo{
+        font-size: 1rem;
+    }
+    #Box{
+        font-size:0.7rem;
+    }
+    .ElementoSalvato{
+        width: 40vw;
+    }
+    .ElementoSalvato img{
+        width: 40vw;
+    }
+    /*Footer*/
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+
+    /*Section*/
+    #Barra-ricerca{
+        top: 5.5vh;
+    }  
+    #Titolo{
+        font-size: 1.5rem;
+    }
+}

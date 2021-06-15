@@ -1,0 +1,99 @@
+
+/*Section*/
+section{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+#Mappa{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+}
+#TheMap{
+    width: 60vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    z-index: 1;
+}
+#contatti{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+#contatti h1{
+    margin-left: 5vw;
+}
+#contatti span{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contatti span p{
+    margin-left: 0.5vw;
+}
+
+
+/*Versione per tablet/iPad */
+
+
+/*Section*/
+@media(max-width: 1200px){
+    #Mappa{
+        width: 65vw;
+        font-size: 1.5rem;
+    }
+    #TheMap{
+        width: 50vw;
+        height: 35vh;
+    }
+    #contatti{
+        width: 35vw;
+    }
+    #contatti p{
+        font-size: 0.75rem;
+    }
+}
+
+/*Versione per smartphone*/
+
+@media(max-width: 600px){
+    /*Section*/
+
+    section{
+        flex-direction: column;
+    }
+    #Mappa{
+        width: 100vw;
+        font-size: 1.3rem;
+    }
+    #TheMap{
+        width: 80vw;
+        height: 40vh;
+    }
+    #contatti{
+        width: 100vw;
+        align-items: center;
+    }
+
+    /*Footer*/
+}
+
+/*Versione per smartphone con larghezza display ridotta*/
+
+@media(max-width: 350px){
+    /*Section*/
+    #Mappa{
+        width: 100vw;
+        font-size: 1rem;
+    }
+
+}
