@@ -21,6 +21,10 @@ class RegistrazioneController extends Controller {
         $request = request();
         $errors = $this->countErrors($request);
         if(count($errors) === 0) {
+            $nascita = new DateTime($request['data']);
+            $now = new DateTime();
+            $interval = $now->diff($nascita);
+            $eta = $interval->y;
             $password = Hash::make($request['pw'], [
                 'rounds' => 12,
             ]);
@@ -30,7 +34,7 @@ class RegistrazioneController extends Controller {
             'Cognome' => $request['cognome'],
             'CF' => $request['CF'],
             'Data_di_nascita' => $request['data'] ,
-            'Età' => "18" ,
+            'Età' => $eta ,
             'Citta_di_nascita' => $request['citta'],
             'Email' => $request['email'],
             'password' => $password,
